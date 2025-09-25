@@ -1,0 +1,5 @@
+there are three kinds of instruction:
+		operand
+		opcode
+		imm instruction
+operand and opcode usually stored in GPR as binary data
