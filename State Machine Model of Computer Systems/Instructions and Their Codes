@@ -1,5 +1,6 @@
-there are three kinds of instruction:
-		operand
-		opcode
-		imm instruction
-operand and opcode usually stored in GPR as binary data
+instructions is the medium of the processor to work
+instruction can divided into three parts :
+				opcode
+				operand
+				immediate
+instructions are actually binary codes
