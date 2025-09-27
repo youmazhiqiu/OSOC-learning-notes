@@ -1,3 +1,10 @@
-PC 
-instruction of PC 
-control the action of processor
+The reason why computer is much more powerful than electronic calculator
+is
+Stored-Program
+
+Program is sequence of instructions
+
+PC stored the location of the currently excuting instruction
+Meanwhile PC is register which can be modified by instructions
+
+enable the branch instructions and so on
