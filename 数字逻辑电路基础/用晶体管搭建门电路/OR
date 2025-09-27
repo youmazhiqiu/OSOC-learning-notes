@@ -1,3 +1,14 @@
 单个输入1就导通到Vcc,同时断开 Gnd
 两个输入0才导通到Gnd,同时断开 Vcc
 反相的NAND
+
+
+我问了GPT,
+这是我的理解：MOS中的载流子总是从Source 到 Drain
+NMos 主要是电子电流，所以电流 方向是 流向Source, Source 接地
+PMos 主要是空穴电流，所以电流 方向是 流向Drain, Drain 接Vcc
+
+所以最初关于OR门mos的猜想违背了NMos Source 接Gnd
+实际的OR门 是 NOR加反相器
+
+Wavin' Flag ~~~~~
