@@ -2,37 +2,54 @@ Complete complex tasks by combining given functions
 
 and there is a example of Calculate the Sum of Odd Numbers less than 10
 
-The processor status changing:
+The processor status changing:              
 
- PC r0 r1 r2 r3
+But obviously, last commit had a critical defect: I just loss the "9" as the last odd number less than 10
+
+the reason why such defect happende is that I miscombined the instructions , actually,
+the "r1 updated" should in the order which is in front of the "r2 updated"
+
+so the right program should be:
+
+0: li r0, 9  # This is decimal 10
+1: li r1, 1
+2: li r2, 1
+3: li r3, 2
+4: add r1, r1, r3
+5: add r2, r1, r2
+6: bner0 r1, 4
+7: bner0 r3, 7
+
+
+
+the status table:
+
+
 ( 0, 0, 0, 0, 0)
 ( 1, 9, 0, 0, 0)
 ( 2, 9, 1, 0, 0)
-( 3, 9, 1, 0, 2)
+( 3, 9, 1, 1, 0)
 ( 4, 9, 1, 1, 2)
 ( 5, 9, 3, 1, 2)
+( 6, 9, 3, 4, 2)
 
-( 3, 9, 3, 1, 2)
 ( 4, 9, 3, 4, 2)
 ( 5, 9, 5, 4, 2)
+( 6, 9, 5, 9, 2)
 
-( 3, 9, 5, 4, 2)
 ( 4, 9, 5, 9, 2)
 ( 5, 9, 7, 9, 2)
+( 6, 9, 7,16, 2)
 
-( 3, 9, 7, 9, 2)
 ( 4, 9, 7,16, 2)
 ( 5, 9, 9,16, 2)
+( 6, 9, 9,25, 2)
 
-
-so the instructions will be:
-
-0: li r0 9;
-1: li r1 1;
-2: li r3 2;
-3: add r2, r1 r2;
-4: add r1, r1 r3;
-5: bner0 r1 3;
-6: bner0 r3 6;
+( 7, 9, 9,25, 2)
+( 7, 9, 9,25, 2)
+( 7, 9, 9,25, 2)
+( 7, 9, 9,25, 2)
+( 7, 9, 9,25, 2)
+......
 
 
