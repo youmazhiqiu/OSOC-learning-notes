@@ -1,0 +1,27 @@
+State Machine Model:
+
+S: State set
+E: Event set
+next: State Transition Rules
+Initial State: S0 belongs to S
+
+
+
+ISA in perspective of a state machine:
+
+S: (PC,R,M)
+E: excuting an instruction
+State Transition Rules: senmantics of instructions
+Initial State: the state before any instructions have been excuted
+
+
+
+the sISA in perspective of a state machine:
+
+S: (PC,r0,r1,r2,r3,M)      #M stored the encoding of the instruction sequence
+E: instruction excution
+State Transition Rules: add instruction, add two registers together.
+                        li instruction, load immediate number, fill high bits with 0s.
+                        bner0 instruction, if not equal to R[0], then jump.
+Initial State: ( 0, 0, 0, 0, 0,)      #omit M
+
