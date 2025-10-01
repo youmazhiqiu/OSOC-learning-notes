@@ -1,0 +1,5 @@
+S: {PC, V}.   #V represents the values of all variables in the program. 
+             #PC is the implicit variable that indicate which statement is currently being excuted.
+E: excution statements.
+State Transition Rules: the semantics of the statement.
+Initial State: {thepositionofthefirststatementinthemainfunction, V0}.
