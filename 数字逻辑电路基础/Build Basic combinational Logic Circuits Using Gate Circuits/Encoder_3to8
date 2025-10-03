@@ -1,0 +1,16 @@
+000 001 010 011 100 101 110 111
+
+00  :1,2
+01  :3,4
+10  :5,6
+11  :7,8
+
+When I was trying to build the decoder, I was firstly regard the 2 original decoder_2to4 with 8 outputs totully as the 
+decoder output,but there will allways "TWO 1" which is against the "MOST ONE 1" principle so I realized that outputs should
+still be composed by AND GATES. It is the biggest bug I have ever met in the designing period.
+
+So,when building some circuits with spesific functions, first step is clear the method of inputs and outputs.
+
+the binary numbers are inputs, I was considerding how to combine the 4 inputs of two decoder_2to4 with the actuall 3 inputs
+
+after finishing the inputs and outputs, just find the intersection.
