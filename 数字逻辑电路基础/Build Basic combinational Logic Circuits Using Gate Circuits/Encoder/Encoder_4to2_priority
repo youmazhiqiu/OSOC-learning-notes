@@ -4,3 +4,13 @@ When Y3 = 0, check whether Y2 = Y3, If not, then Y2 = 1, just follow Y2
                                     If euqal, then Y2 = 0, check whether Y1 = Y2，If not, then Y1 = 1, just follow Y1
                                                                                   If equal, then Y1 = 0, check whether Y0 = Y1, If not, then Y0 = 1, just follow Y0
                                                                                                                                 If equal, then Y0 = 0, illeagul(undefined)
+
+Obviously, the logic is right, but how to implement it in circuits became my problem
+
+I need branch circuit 。
+
+I finally finished
+I use NOR Gate to pass the 0s,
+then I use the specific to build the output
+
+I still have no idea how to display the float number, so I put it as 0.
