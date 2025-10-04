@@ -1,0 +1,17 @@
+When building this, what came to my mind first is : my Encoder_4to2_priority didn't treat undifined value well, so it can not be used to build the 16to4 module
+
+So I turned to add output X of Encoder_4to2_priority, Then I begun to build this huge job
+
+At first I have no idea what to do, until I gradually realized what form the output should be : still OR GATES
+But in this way, what role Encoder_4to2_priority played? It has 4 input and 2 output , 4 of it will cover all the inputs, but only half outputs
+So I need to use And Gates and NOT Gates to specificied each outputs of each binary output. #   regard Encoder_4to2_priority's output as a bit , trans it to demical (one hot)
+After this actions demical turns to demical. So the 4to2 played a role of Priority_giving.
+After noticing this, I begun to considerate how to implement this:
+Each 4to2 can make sure 4 demical number follow the principle of priority, then how to link this 4 number and another 4 number?
+The output X I build before representing (0000) is the key, just pass it.
+
+AND GATES and OR GATES are my best friends
+AND allways used for input filter because of the all for one or condition logic
+OR allways used for output selector because of the one for all logic
+
+I love NOT GATE.
