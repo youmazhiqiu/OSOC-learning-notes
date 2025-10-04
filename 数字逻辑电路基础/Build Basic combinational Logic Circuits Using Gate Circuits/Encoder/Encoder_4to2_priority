@@ -1,0 +1,6 @@
+With the power of XOR Gate, I implemented the priority logic:
+When Y3 = 1, just follow Y3
+When Y3 = 0, check whether Y2 = Y3, If not, then Y2 = 1, just follow Y2
+                                    If euqal, then Y2 = 0, check whether Y1 = Y2，If not, then Y1 = 1, just follow Y1
+                                                                                  If equal, then Y1 = 0, check whether Y0 = Y1, If not, then Y0 = 1, just follow Y0
+                                                                                                                                If equal, then Y0 = 0, illeagul(undefined)
