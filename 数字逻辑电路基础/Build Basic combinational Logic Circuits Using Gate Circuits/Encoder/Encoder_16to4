@@ -1,3 +1,24 @@
 Just a layer of OR logic
 
 But make sure the input is defined by a DIP switch
+
+
+When editing the simulated OR logic circuit, I came to two logic
+
+
+
+The first is "Last bit Principle"
+Y0 Y1 Y2 Y3
+When Y0 turns to 1, means the demical word can be writed as ( 2^x + 2^y + 2^z + ... + 2 )   # x,y,z are intgers,and x,y,z > 1 
+Because when Y0 equal 1, the "Last bit" must be 2.
+When Y1 truns to 1, means the demical word can be writed as ( 2^x + 2^y + 2^z + ... + 3/4)
+Because when Y1 equal 1, the "Last bits" depending on Y0 has two Posibilities : 2 + 1, 2 + 2   # 0000 = 1
+When Y2 truns to 1, means the demical word can be writed as ( 2^x + 2^y + 2^z + ... + 5/6/7/8)
+Because when Y2 equal 1, the "Last bits" depending on Y0,Y1 has four Posibilities : 4 + 1, 4 + 2, 4 + 3，4 + 4 
+When Y3 truns to 1, means the demical word can be writed as ( 2^x + 2^y + 2^z + ... + 9/10/11/12/13/14/15/16)
+Because when Y3 equal 1, the "Last bits" depending on Y0,Y1,Y2 has eight Posibilities : 8 + 1, 8 + 2, 8 + 3, 8 + 4, 8 + 5, 8 + 6, 8 + 7, 8 + 8)
+
+So, as for how to configure the OR Gate for each binary bits, we should divided the demical word to ( 2^x + 2^y + 2^z + ... + '2^n')   # n is the binary bit sequent number
+
+
+The second is : the each OR gate need 2*2*2 = 8 ports
