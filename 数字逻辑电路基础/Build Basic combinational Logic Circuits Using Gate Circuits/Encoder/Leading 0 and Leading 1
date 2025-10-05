@@ -1,0 +1,2 @@
+Priority Encoder usually accept hot inputs, each bits represents a demical word
+But we can put each bit of a binary number into it , so that it can shows which is the first "1 bit"
