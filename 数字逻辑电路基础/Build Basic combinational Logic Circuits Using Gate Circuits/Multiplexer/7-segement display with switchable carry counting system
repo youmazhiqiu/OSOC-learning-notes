@@ -1,0 +1,18 @@
+What need to select:
+which DIP as input
+which mode to display
+
+So, focus on the input selection first
+I can use the 4to1 selctor logic to finish, that is all
+
+Then focus on the mode selection
+
+with AND GATE can combine Selection signal an input signal together, clear selectied signal
+
+how much of it do I need?
+
+I need to double the abcdefg OR GATEs input bits, and make the two sets of signal clearselectied 
+then tie to the OR GATES .
+That is all
+
+Special thanks to BITS-MORE OR GATE
