@@ -1,0 +1,4 @@
+I qucikly implemented the 4to1 selector circuit
+but I have no idea how to represent the 3bits.
+So I decided to use 3 inputs and 12 outputs to 
+represent the 3bits of each "D"
