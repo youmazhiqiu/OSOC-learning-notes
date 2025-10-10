@@ -10,6 +10,6 @@ Destination : three inputs , two outputs
 
 A add B = S' and Cout'
 S' add Cin = S and Cout''
-Cout' add Cout'' = Cout
+Cout' | Cout'' = Cout
 Three inputs: A B Cin
 two outputs: S Cout
