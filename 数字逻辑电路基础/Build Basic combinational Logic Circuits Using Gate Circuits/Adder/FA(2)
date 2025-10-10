@@ -1,0 +1,15 @@
+Truth table for a HA
+
+A  B  S  Cout       
+0  0  0  0            
+0  1  1  0            
+1  0  1  0            
+1  1  1  1           
+
+Destination : three inputs , two outputs
+
+A add B = S' and Cout'
+S' add Cin = S and Cout''
+Cout' add Cout'' = Cout
+Three inputs: A B Cin
+two outputs: S Cout
