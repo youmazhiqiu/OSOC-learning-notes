@@ -1,0 +1,14 @@
+Truth table for a 1-bit FA
+
+A  B  Cin   S  Count
+0  0  0     0  0
+0  0  1     1  0
+0  1  0     1  0
+0  1  1     0  1
+1  0  0     1  0
+1  0  1     0  1
+1  1  0     0  1
+1  1  1     1  1
+
+S = (A ^ B) ^ Cin    #A B Cin are equivalent
+Count = A & B | A & Cin | B & Cin
