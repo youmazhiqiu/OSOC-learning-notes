@@ -1,0 +1,15 @@
+#A:Minuend  B:Subtrahend  C:Absolute value  D:Sign
+A B   C  D   
+1 1   0  0
+1 0   1  0
+0 1   1  1
+0 0   0  0
+
+D = -A & B
+C = A ^ B
+
+Above shows 1-bit subtractor, two inputs, two outputs C,D
+D can force Last A not
+And the latest D is the final sign-bit
+
+-(D' & A) Subtract B = C and D
