@@ -1,0 +1,23 @@
+3 inputs 2 outputs
+
+inputs: X Y Bin
+outputs: Z Bout
+
+1-bit:
+
+X Y Bin Z Bout
+0 0 0   0 0
+0 0 1   1 1
+0 1 0   1 1
+0 1 1   0 1
+1 0 0   1 0
+1 0 1   0 0
+1 1 0   0 0
+1 1 1   1 1
+
+Z = (X ^ Y) ^ Bin
+Bout = -x & (Y | Bin) | x & (Y & Bin)
+
+4-bits
+
+Bout -> Bin Bout -> Bin ...
