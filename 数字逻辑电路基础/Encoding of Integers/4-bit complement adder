@@ -1,0 +1,15 @@
+Convert the complement to its true value equivalent sign-and-magnitude
+add
+Convert back
+
+4 inputs 4 outputs
+
+S1:
+   If sign is 1, NOT
+   If sign is 0, do nothing
+
+   selector can do this. use sign as control
+
+S2: add
+
+S3: the same as S1.
