@@ -1,0 +1,27 @@
+10 inputs 
+2 outputs
+
+check sign bits
+same : add absolute value and pass sign bits
+different: compare absolute value and subtract and pass the bigger sign
+
+
+how to check:
+
+            XOR Gate to decide use adder or subtractor
+
+how to compare:
+            use subtractor and check the Bout
+
+how to control which mode：
+
+            use the signal Bout to control
+
+how to find out the bigger sign:
+
+            same as the selecting which one as the subhend
+
+
+
+
+
