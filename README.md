@@ -1,6 +1,6 @@
 # OSOC-learning-notes
 
-Welcome to my learning notes for the **OSOC** (Open Source Operating System Camp / One Student One Chip) or related Computer Systems study. This repository contains my course notes, circuit designs, and code experiments documenting my journey from basic logic gates to computer system architecture and software programming.
+Welcome to my learning notes for the **OSOC** (One Student One Chip) or related Computer Systems study. This repository contains my course notes, circuit designs, and code experiments documenting my journey from basic logic gates to computer system architecture and software programming.
 
 ## 目录结构 (Directory Structure)
 
