@@ -1,34 +1,56 @@
-# OSOC-learning-notes
+# “一生一芯”学习记录
 
-Welcome to my learning notes for the **OSOC** (One Student One Chip) or related Computer Systems study. This repository contains my course notes, circuit designs, and code experiments documenting my journey from basic logic gates to computer system architecture and software programming.
+本仓库记录了我在 2025 年沿
+[“一生一芯” v24.07 学习讲义](https://ysyx.oscc.cc/docs/2407/)
+进行预学习的过程，主要对应 **F3 数字逻辑电路基础**
+和 **F4 计算机系统的状态机模型**。
 
-## 目录结构 (Directory Structure)
+仓库中保留了 Markdown 笔记、Logisim 电路文件、不同实现版本，
+以及学习过程中形成和修正理解的痕迹。
 
-The repository is structured by topics ranging from the bottom up:
+## 学习范围与当前进度
 
-### 1. 数字逻辑电路基础 (Digital Logic Circuit Basics)
-Explores how to build computational systems from the ground up:
-* **通过晶体管实现0和1 (Implementing 0 and 1 with Transistors)**
-* **用晶体管搭建门电路 (Building Gate Circuits with Transistors)**: AND, OR, NOT, NAND, XOR.
-* **Basic Combinational Logic Circuits**: Adders, Decoders, Encoders, Multiplexers.
-* **Encoding of Integers**: Complement adders, Sign-magnitude adders, Substractors, Two's complement and overflow detection.
-* **Sequential Logic Circuit**: SR latch, D latch, Flip-flops, Registers, and Counters.
+### F3：数字逻辑电路基础
 
-### 2. State Machine Model of Computer Systems
-Understanding processors and instruction sets through the state machine model:
-* **The Composition and Working Principle of Processors**: Stored-program concepts, instructions and their codes.
-* **State Machine Model of Instruction Set Architecture**
-* **C Programming for Beginners**: The state machine model of C programs.
+已留下记录的内容包括：
 
-### 3. Linux C
-Basic programming and debugging in a Linux environment:
-* **自然语言与形式语言 (Natural Language and Formal Language)**
-* **编程与调试 (Programming and Debugging)**
+- 从晶体管的开关特性理解逻辑 0 和逻辑 1；
+- 使用门电路搭建译码器、编码器、多路选择器和加法器等组合逻辑电路；
+- 学习原码、反码和补码，并尝试实现加法、减法与溢出检测电路；
+- 搭建 S-R 锁存器、D 锁存器、D 触发器、寄存器和计数器等时序逻辑电路。
 
-## 使用说明 (Usage)
-The `.circ` files inside the `数字逻辑电路基础` directory are circuit design files that can be opened and simulated using [Logisim](http://www.cburch.com/logisim/) or Logisim-Evolution. 
+### F4：计算机系统的状态机模型
 
-Other files contain my markdown notes and code snippets.
+已留下记录的内容包括：
 
----
-*Happy Hacking!*
+- 存储程序思想、指令及其二进制编码；
+- PC、通用寄存器和内存在程序执行中的作用；
+- 用状态 `S = (PC, R, M)` 描述 ISA 的可见状态；
+- 将指令执行理解为状态转移，并手工跟踪数列求和程序的执行过程。
+
+目前本仓库**尚未完成 F5 和 F6 的处理器实现内容**。
+后续学习将在复习并校正现有记录的基础上继续推进。
+
+## 仓库结构
+
+### 1. [数字逻辑电路基础](./%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/)
+
+记录从逻辑信号、门电路到组合逻辑、整数编码和时序逻辑的学习过程，
+包含 `.circ` 电路文件。
+
+### 2. [计算机系统的状态机模型](./State%20Machine%20Model%20of%20Computer%20Systems/)
+
+记录存储程序、指令编码、ISA 状态机以及简单程序执行过程的理解。
+
+### 3. [Linux C](./Linux%20C/)
+
+记录同期进行的 C 语言、形式语言、编程与调试基础学习，
+
+## 如何查看
+
+- `.circ` 文件可使用 Logisim 或 Logisim-Evolution 打开并仿真；
+- 其余文件主要是 Markdown 或纯文本笔记；
+- 部分文件名、英文表达和早期结论保留了当时的学习状态，
+  其中可能存在不严谨之处；
+
+
